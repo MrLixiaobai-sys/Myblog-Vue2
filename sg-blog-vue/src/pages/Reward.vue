@@ -1,4 +1,4 @@
-<!-- 赞赏页面 -->
+<!-- 留白页面 -->
 <template>
 <div>
 	<sg-nav></sg-nav>

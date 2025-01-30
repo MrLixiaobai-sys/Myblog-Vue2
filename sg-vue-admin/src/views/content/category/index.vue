@@ -194,7 +194,7 @@ export default {
         description: null,
         metaKeywords: null,
         metaDescription: null,
-        status: 0,
+        status: undefined,
         createBy: null,
         createTime: null,
         updateBy: null,

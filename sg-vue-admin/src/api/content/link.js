@@ -4,8 +4,8 @@ import request from '@/utils/request'
 export function listLink(query) {
   return request({
     url: '/content/link/list',
-    method: 'get',
-    params: query
+    method: 'post',
+    data: query // 将分页参数放入请求体中
   })
 }
 

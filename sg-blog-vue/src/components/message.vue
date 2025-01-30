@@ -41,9 +41,9 @@
                     <li class="tmsg-c-item" v-for="(item,index) in commentList" :key="'common'+index">
                         <article class="">
                             <header>
-                                <img  :src="$store.state.errorImg"  :onerror="$store.state.errorImg">
+                                <img  :src="item.avatar || $store.state.errorImg"  :onerror="$store.state.errorImg">
                                 <div class="i-name">
-                                    {{item.username}}
+                                    {{item.nickName}}
                                 </div>
                                 <!-- <div class="i-class">
                                     {{item.label}}
@@ -63,9 +63,9 @@
                             <li class="tmsg-c-item" v-for="(citem,cindex) in item.children" :key="'citem'+cindex">
                                 <article class="">
                                     <header>
-                                            <img :src="$store.state.errorImg"  :onerror="$store.state.errorImg">
+                                            <img :src="citem.avatar || $store.state.errorImg"  :onerror="$store.state.errorImg">
                                             <div class="i-name">
-                                                {{citem.username}} <span>回复</span> {{citem.toCommentUserName}}
+                                                {{citem.nickName}} <span>回复</span> {{citem.toCommentNickName}}
                                             </div>
                                             <div class="i-time">
                                                 <time>{{citem.createTime}}</time>

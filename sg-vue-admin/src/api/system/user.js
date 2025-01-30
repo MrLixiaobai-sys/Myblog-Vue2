@@ -4,8 +4,8 @@ import { praseStrEmpty } from '@/utils/sg'
 export function listUser(query) {
   return request({
     url: '/system/user/list',
-    method: 'get',
-    params: query
+    method: 'post',
+    data: query // 将分页参数放入请求体中
   })
 }
 // 查询用户详细
